@@ -1,0 +1,33 @@
+Task: Compute the 20th Fibonacci number and generate the sequence using dynamic programming in Python.
+
+Important constraints:
+- Use Python standard library only.
+- Do not require third-party packages.
+- The generated program must run as a standalone script.
+
+Required deliverables in the generated program:
+1. Computation pipeline:
+- Implement a dynamic programming approach (memoization or tabulation) to compute the sequence up to fibonacci(20).
+- Track the computation steps to demonstrate the efficiency of DP over naive recursion.
+
+2. Test and evaluation pipeline:
+- Provide a separate evaluation stage after computation.
+- Include assert statements for edge cases (e.g., fibonacci(0) and fibonacci(1)) and verify the final result.
+
+3. Visualization output:
+- Produce a textual representation of the dynamic programming array/table.
+- Print the final sequence to the terminal clearly.
+
+4. CSV reporting:
+- Generate fibonacci_report.csv in the current working directory.
+- Use a relative path only.
+- Include fields such as step index (N) and the computed Fibonacci value.
+
+5. Main execution body:
+- Include a complete if __name__ == "__main__" execution path.
+- Running the file should execute the DP computation, tests, visualization, and CSV generation.
+
+Quality expectations:
+- Keep code modular, readable, and fully runnable.
+- Include practical inline documentation for major components.
+- Avoid placeholders and incomplete sections.
