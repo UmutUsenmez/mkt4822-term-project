@@ -24,16 +24,20 @@ def episode_reward(result: AgentRunResult, config: LearningConfig) -> float:
     if "behavior" in failed_names:
         reward -= config.behavior_failure_penalty
 
+    if "runtime" in failed_names:
+        reward -= config.extract_failure_penalty * 2.0  
+        
+    if "syntax" in failed_names or "import" in failed_names:
+        reward -= config.extract_failure_penalty * 1.5
+
     if result.duration_sec > 1.0:
         penalty_ratio = 1.0 - (1.0 / min(result.duration_sec, config.latency_horizon_sec))
         reward -= penalty_ratio * config.latency_penalty
 
     return max(-1.0, min(1.0, reward))
 
-
 def reward_to_beta_update(reward: float) -> float:
     """Map reward in ``[-1, 1]`` to a pseudo-success in ``[0, 1]``."""
     return max(0.0, min(1.0, (reward + 1.0) / 2.0))
-
 
 __all__ = ["episode_reward", "reward_to_beta_update"]

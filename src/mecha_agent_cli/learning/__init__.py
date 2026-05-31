@@ -1,6 +1,6 @@
-"""Placeholder learning package for student implementation.
+"""Learning package for mecha-agent-cli.
 
-All exported symbols are intentionally lightweight stubs.
+Fully integrated with the new Q-Learning optimization.
 """
 
 from __future__ import annotations
@@ -8,7 +8,7 @@ from __future__ import annotations
 from mecha_agent_cli.learning.arm_registry import ARM_REGISTRY, Arm, get_arm, list_arm_ids
 from mecha_agent_cli.learning.bandit import BanditStore, ThompsonBandit
 from mecha_agent_cli.learning.context import build_context_key
-from mecha_agent_cli.learning.q_learning import QLearningPlaceholder, placeholder_status
+from mecha_agent_cli.learning.q_learning import QLearning, QLearningPlaceholder, placeholder_status
 from mecha_agent_cli.learning.reward import episode_reward
 
 __all__ = [
@@ -22,4 +22,5 @@ __all__ = [
     "list_arm_ids",
     "placeholder_status",
     "QLearningPlaceholder",
+    "QLearning", 
 ]
