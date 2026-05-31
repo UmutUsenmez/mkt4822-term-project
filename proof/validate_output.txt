@@ -1,0 +1,38 @@
+✓ generate (#1) 2705.8s — model returned 3364 chars
+✓ bandit_update (#1) 0.1s — attempt=1 ctx=actor_critic|qwen3:4b|new|a0|pf:none|p:0|d:na arm=direct.cool reward=+1.000 pulls=1 alpha=2.00 beta=1.00 mean=0.667
+✓ validate (#1) — attempt 1 passed
+✓ judge (#1) 93.9s — verdict=UNSURE confidence=0.00 accepted=True
+✓ complete (1/6) — algorithm.py validated after 1 attempt(s)
+                               Run result                               
+┏━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ Key               ┃ Value                                            ┃
+┡━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ task_id           │ 559001                                           │
+│ status            │ success                                          │
+│ changed_files     │ algorithm.py                                     │
+│ attempt_snapshots │ .mecha-agent/attempts/task-559001-attempt-000.py │
+│ total_attempts    │ 1                                                │
+│ max_attempts      │ 6                                                │
+│ primary_failure   │ NONE                                             │
+└───────────────────┴──────────────────────────────────────────────────┘
+ syntax: exit=0
+ undefined_name: exit=0
+ spec_contract: exit=0
+ import: exit=0
+ runtime: exit=0
+ behavior: exit=0
+semantic_score=1.00
+total_score=1.00
+primary_failure=UNKNOWN
+                                                                          Judge                                                                          
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ Key                      ┃ Value                                                                                                                      ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ verdict                  │ UNSURE                                                                                                                     │
+│ confidence               │ 0.00                                                                                                                       │
+│ suspected_false_positive │ True                                                                                                                       │
+│ primary_failure_guess    │ UNKNOWN                                                                                                                    │
+│ report_path              │ /home/umut/mkt4822_workspace/mkt4822-RL-term-project-agent-cli/runs/mkt4822_proof_workspace/.mecha-agent/judge/latest.json │
+└──────────────────────────┴────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+Judge reasons:
+- Judge response was not valid JSON.
